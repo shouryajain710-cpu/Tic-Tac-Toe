@@ -29,7 +29,9 @@ boxes.forEach((box)=>{
         para.innerText = `${currentplayer}`+'s turn';
         }
         checkWinner();
-        tie();
+        if(!gameOver){
+            tie();
+        }
     })
 })
 const tie = () =>{
